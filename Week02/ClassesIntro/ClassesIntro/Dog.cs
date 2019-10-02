@@ -12,6 +12,7 @@ namespace ClassesIntro
         public string Breed;
         public int Height;
         public string Name;
+        public string Color;
 
         public void Bark()
         {
