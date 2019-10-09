@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ClassesIntro
+namespace MovieList
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,27 +23,6 @@ namespace ClassesIntro
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Bark_Button_Click(object sender, RoutedEventArgs e)
-        {
-            Dog dog = new Dog();
-            dog.Name = "Bob";
-            dog.Bark();
-            dog.SayName();
-        }
-
-        private void SayName_Button_Click(object sender, RoutedEventArgs e)
-        {
-            string dogName = DogName.Text;
-
-            Dog dog = new Dog("Corgi", 12, dogName, "");
-            dog.SayName();
-        }
-
-        private void Jonah_Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

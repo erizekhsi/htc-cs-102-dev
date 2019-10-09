@@ -10,9 +10,10 @@ namespace ClassesIntro
     public class Dog
     {
         public string Breed;
-        public int Height;
+        public int HeightInInches;
         public string Name;
         public string Color;
+        public bool IsBadDog;
 
         public void Bark()
         {
@@ -24,13 +25,23 @@ namespace ClassesIntro
             MessageBox.Show("My name is " + Name);
         }
 
-        public Dog() { }
 
-        public Dog(string breed, int height, string name)
+        public Dog()
+        {
+            this.Breed = "German Shepard";
+            this.HeightInInches = 2;
+            this.Name = "Spiderman";
+        }
+
+        public Dog(string breed, int height, string name, string lastname)
         {
             this.Breed = breed;
-            this.Height = height;
+            this.HeightInInches = height;
             this.Name = name;
+            if (lastname == "Obama")
+            {
+                Name = "Bo";
+            }
         }
     }
 }
